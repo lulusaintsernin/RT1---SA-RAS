@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Google - Simulation</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        /* Barre de navigation haute */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            gap: 15px;
+            font-size: 13px;
+        }
+        header a {
+            text-decoration: none;
+            color: rgba(0,0,0,0.87);
+            line-height: 24px;
+        }
+        header a:hover { text-decoration: underline; }
+
+        /* Contenu central */
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -100px; /* Remonte un peu le logo */
+        }
+        .logo {
+            font-size: 90px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .blue { color: #4285F4; }
+        .red { color: #EA4335; }
+        .yellow { color: #FBBC05; }
+        .green { color: #34A853; }
+
+        /* Barre de recherche */
+        .search-box {
+            width: 584px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .search-box:hover {
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+        }
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        /* Boutons */
+        .buttons {
+            margin-top: 30px;
+        }
+        button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 34px;
+            height: 36px;
+            cursor: pointer;
+        }
+        button:hover {
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#">Gmail</a>
+    <a href="#">Images</a>
+    <a href="#" style="background: #4285F4; color: white; padding: 0 12px; border-radius: 4px; font-weight: bold;">Connexion</a>
+</header>
+
+<main>
+    <div class="logo">
+        <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" placeholder="Rechercher sur Google ou saisir une URL">
+    </div>
+
+    <div class="buttons">
+        <button>Recherche Google</button>
+        <button>J'ai de la chance</button>
+    </div>
+</main>
+
+</body>
+</html>
